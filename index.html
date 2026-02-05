@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>✈️ Flight Booking System</h1>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Find Flights</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" name="from" required placeholder="Departure city">
+                </div>
+                
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" name="to" required placeholder="Destination city">
+                </div>
+                
+                <div class="form-group">
+                    <label for="departure">Departure Date:</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="return">Return Date:</label>
+                    <input type="date" id="return" name="return">
+                </div>
+                
+                <div class="form-group">
+                    <label for="passengers">Passengers:</label>
+                    <select id="passengers" name="passengers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>Available Flights</h2>
+            <div id="flight-results">
+                <p>No flights found. Search for flights to get started.</p>
+            </div>
+        </section>
+
+        <section class="bookings-section">
+            <h2>My Bookings</h2>
+            <div id="my-bookings">
+                <p>No bookings yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
